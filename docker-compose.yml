@@ -31,7 +31,7 @@ services:
         environment:
             #server: db
             #username: postgres
-            POSTGRES_PASSWORD: POSTGRES_PASS
+            POSTGRES_PASSWORD: ${POSTGRES_PASS}
             #database: postgres
         volumes:
             #- ./src:/src

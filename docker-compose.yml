@@ -10,8 +10,8 @@ services:
             - ./src:/src
             - ./site.conf:/etc/nginx/conf.d/default.conf
             #- ./nginx/:/etc/nginx/
-            - ./nginx/tab160.com.pem:/etc/nginx/tab160.com.pem
-            - ./nginx/tab160.com.key:/etc/nginx/tab160.com.key
+            #- ./nginx/tab160.com.pem:/etc/nginx/tab160.com.pem
+            #- ./nginx/tab160.com.key:/etc/nginx/tab160.com.key
         networks:
             - code-network
     php:

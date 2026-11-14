@@ -1,0 +1,79 @@
+.logo-div-projects {
+	/*transition: all 2s ease-in-out;*/
+	width: 10vw;
+	display: flex;
+	justify-content: center;
+}
+
+.logo-img-projects {
+	transition: all 2s ease-in-out;
+	width: 10vw;
+}
+
+.spacer-projects, .aboutMe-projects, .projects-projects, .shop-projects {
+    text-align: right;
+	transition: all 2s ease-in-out;
+	width: 20vh;
+	white-space: nowrap;
+}
+
+.foreground-projects {
+	/*transition: all 2s ease-in-out;*/
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	width: 100vw;
+	top: 0vw;
+	left: 2vw;
+}
+
+.navigation-projects {
+    z-index: 1;
+	/*transition: all 2s ease-in-out;*/
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: right;
+	font-size: 4vh;
+	text-align: center;
+}
+
+.blue-selector-projects {
+    z-index: 0;
+    position: absolute;
+	transition: all 2s ease-in-out;
+	margin-top: 3vh;
+	right: 11vh;
+	width: 20vh;
+	height: 6vh;
+	background-color: var(--blue);
+}
+
+.aboutMeContent-projects {
+	transition: all 2s ease-in-out;
+	display: flex;
+	position: absolute;
+	justify-content: space-evenly;
+	font-size: 0vh;
+	width: 0vw;
+	bottom: 0vh;
+}
+
+.selfie-div-projects {
+	transition: all 2s ease-in-out;
+	width: 100%;
+}
+
+.selfie-img-projects {
+	transition: all 2s ease-in-out;
+	width: 100%;
+}
+
+.projectsContent-projects {
+	transition: all 2s ease-in-out;
+	display: flex;
+	position: absolute;
+	justify-content: space-evenly;
+	font-size: 4vh;
+	width: 100vw;
+	top: 25vh;
+}

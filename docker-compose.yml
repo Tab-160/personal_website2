@@ -1,0 +1,51 @@
+version: '2'
+
+services:
+    web:
+        image: nginx
+        ports:
+            - "80:80"
+            - "443:443"
+        volumes:
+            - ./src:/src
+            - ./site.conf:/etc/nginx/conf.d/default.conf
+            #- ./nginx/:/etc/nginx/
+            - ./nginx/tab160.com.pem:/etc/nginx/tab160.com.pem
+            - ./nginx/tab160.com.key:/etc/nginx/tab160.com.key
+        networks:
+            - code-network
+    php:
+        #image: php:fpm
+        build:
+            context: ./dockerfiles/
+            dockerfile: ./Dockerfile
+        volumes:
+            - ./src:/src
+        networks:
+            - code-network
+    db:
+        image: postgres
+        ports: 
+            - "5432:5432"
+        restart: always
+        environment:
+            #server: db
+            #username: postgres
+            POSTGRES_PASSWORD: example
+            #database: postgres
+        volumes:
+            #- ./src:/src
+            - ./postgres-data:/var/lib/postgresql
+        networks:
+            - code-network
+    adminer:
+        image: adminer
+        restart: always
+        ports:
+            - 5678:8080
+        networks:
+            - code-network
+
+networks:
+    code-network:
+        driver: bridge

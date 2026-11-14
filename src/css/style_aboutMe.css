@@ -1,0 +1,84 @@
+.logo-div-aboutMe {
+	/*transition: all 2s ease-in-out;*/
+	width: 10vw;
+	display: flex;
+	justify-content: center;
+}
+
+.logo-img-aboutMe {
+	transition: all 2s ease-in-out;
+	width: 10vw;
+}
+
+.spacer-aboutMe, .aboutMe-aboutMe, .projects-aboutMe, .shop-aboutMe {
+    text-align: right;
+	transition: all 2s ease-in-out;
+	width: 20vh;
+	white-space: nowrap;
+}
+
+.foreground-aboutMe {
+	/*transition: all 2s ease-in-out;*/
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	width: 100vw;
+	top: 0vw;
+	left: 2vw;
+}
+
+.navigation-aboutMe {
+    z-index: 1;
+	/*transition: all 2s ease-in-out;*/
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: right;
+	font-size: 4vh;
+	text-align: center;
+}
+
+.blue-selector-aboutMe {
+    z-index: 0;
+    position: absolute;
+	transition: all 2s ease-in-out;
+	margin-top: 3vh;
+	right: 33vh;
+	width: 20vh;
+	height: 6vh;
+	background-color: var(--blue);
+}
+
+.aboutMeContent-aboutMe {
+	transition: all 2s ease-in-out;
+	display: flex;
+	position: absolute;
+	justify-content: space-evenly;
+	font-size: 4vh;
+	width: 100vw;
+	bottom: 0vh;
+}
+
+.selfie-div-aboutMe {
+	transition: all 2s ease-in-out;
+	width: 25vw;
+}
+
+.selfie-img-aboutMe {
+	transition: all 2s ease-in-out;
+	width: 100%;
+}
+
+.intro-aboutMe{
+	transition: all 2s ease-in-out;
+	width: 60vw;
+}
+
+.projectsContent-aboutMe {
+	transition: all 2s ease-in-out;
+	display: flex;
+	position: absolute;
+	justify-content: space-evenly;
+	font-size: 0vh;
+	width: 0vw;
+	bottom: 0vh;
+}

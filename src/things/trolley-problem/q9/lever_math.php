@@ -14,7 +14,7 @@
 		<p>You Pulled the Lever!</p>
 		<?php
 			// connect to database
-			$dbconn = pg_connect("host=host.docker.internal port=5432 dbname=postgres user=postgres password=example");
+			$dbconn = pg_connect("host=host.docker.internal port=5432 dbname=postgres user=postgres password=".$_ENV["POSTGRES_PASS"]."");
 		
 		
 			//grab pulled lever amount

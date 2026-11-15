@@ -11,7 +11,7 @@
 		<br>
 			<?php
 				// connect to database
-				$dbconn = pg_connect("host=host.docker.internal port=5432 dbname=postgres user=postgres password=example");
+				$dbconn = pg_connect("host=host.docker.internal port=5432 dbname=postgres user=postgres password=".$_ENV["POSTGRES_PASS"]."");
 				
 				// grab all users
 				$result = pg_query($dbconn, "SELECT * FROM users ORDER BY score DESC");

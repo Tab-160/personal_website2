@@ -6,7 +6,7 @@
 	setcookie("name", $name, 0, "/");
 
 	// connect to database
-	$dbconn = pg_connect("host=host.docker.internal port=5432 dbname=postgres user=postgres password=example");
+	$dbconn = pg_connect("host=host.docker.internal port=5432 dbname=postgres user=postgres password=".$_ENV["POSTGRES_PASS"]."");
 
 	// add name to database
 	pg_query($dbconn, "INSERT INTO users (name, score) VALUES ('$name', 0);");

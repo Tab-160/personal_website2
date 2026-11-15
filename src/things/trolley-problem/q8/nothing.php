@@ -16,7 +16,7 @@
 			// grab the name of the user
 			$name = $_COOKIE["name"];
 			// connect to database
-			$dbconn = pg_connect("host=host.docker.internal port=5432 dbname=postgres user=postgres password=example");
+			$dbconn = pg_connect("host=host.docker.internal port=5432 dbname=postgres user=postgres password=".$_ENV["POSTGRES_PASS"]."");
 		
 			// grab score of the current user and store as an int
 			$result = pg_query($dbconn, "SELECT score FROM users WHERE name='$name'");

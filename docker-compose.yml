@@ -19,6 +19,8 @@ services:
         build:
             context: ./dockerfiles/
             dockerfile: ./Dockerfile
+        environment:
+            POSTGRES_PASS: ${POSTGRES_PASS}
         volumes:
             - ./src:/src
         networks:

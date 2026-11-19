@@ -1,1 +1,3 @@
 Make sure that ports 80 and 443 are forwarded in the modem.
+
+in order to update images, run `docker compose pull` before rebuilding
